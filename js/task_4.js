@@ -1,9 +1,11 @@
 let credits = 23580;
 const pricePerDroid = 3000;
-const numberOfDroids = 4; //change that user coud enter a number if possible
+const message = prompt("How many do you want to buy?");
+let numberOfDroids = message;
+numberOfDroids = Number(numberOfDroids);
 let totalPrice;
 
-let message = prompt("How many do you want to buy?");
+
 
 if (message === null) {
     console.log('Скасовано користувачем!');

@@ -12,6 +12,4 @@ else if (message === ADMIN_PASSWORD) {
 else {
     message = 'Доступ заборонений, невірний пароль!';
 }
-// console.log(message);
-
 alert(message);

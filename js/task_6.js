@@ -1,12 +1,22 @@
 let input;
 let total = 0;
-const number = 5;
-const message = prompt("Enter a number:")
+let number = 5;
 
-do {
+for (let i = 0; input !== null; i += 1) {
+  input = prompt("Enter a number:");
+  number = input;
+
+  
+  if (isNaN(number)) // if (typeof number !== 'number')
+  {
+    alert('Було написано не число, спробуйте ще раз')
     
-    total = (total + number);
-    message;
-  result = total;
-} while (message === null);
-console.log(total)
+  }
+  else {
+   number = Number(number)
+     total = (total + number);
+    
+   }
+}
+alert(`Загальна сума чисел дорівнює ${total}`)
+input === null;

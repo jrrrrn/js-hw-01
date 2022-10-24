@@ -1,19 +1,33 @@
-//NOT COMPLETE
+console.log('Доступні країни : Китай, Чилі, Австралія, Індія, Ямайка')
+const prices = [100, 250, 170, 80, 120];
+const country = prompt("Enter the country you want to arrange delivery to");
+const countryToDeliver = country.toLowerCase(); 
 
-const countries = ["Китай", "Чилі", "Австралія", "Індія", "Ямайка"];
-const prices = [100, 250, 170, 80, 120]
-let deliveryPrice;
-const message = prompt("Enter the country you want to arrange delivery to")
-switch (deliveryPrice) {
-    case countries[0]: prices[0]
-    case countries[1]: prices[1]
-    case countries[2]: prices[2]
-    case countries[3]: prices[3]
-    case countries[4]: prices[3]
-     
-        countries.toUpperCase;
-        console.log(`Доставка в ${countries[3]} буде коштувати ${prices[3]} кредитів`)
+let price;
+
+switch (countryToDeliver) {
+    
+    case "китай":
+        price = prices[0];
+        alert(`Доставка в ${countryToDeliver} буде коштувати ${price} кредитів`)
         break;
-    default:
-        alert("У вашій країні доставка недоступна");
+     case "чилі":
+        price = prices[1];
+        alert(`Доставка в ${countryToDeliver} буде коштувати ${price} кредитів`)
+        break;
+     case "австралія":
+        price = prices[2];
+        alert(`Доставка в ${countryToDeliver} буде коштувати ${price} кредитів`)
+        break;
+     case "індія":
+        price = prices[3];
+        alert(`Доставка в ${countryToDeliver} буде коштувати ${price} кредитів`)
+        break;
+     case "ямайка":
+        price = prices[4];
+        alert(`Доставка в ${countryToDeliver} буде коштувати ${price} кредитів`)
+        break;
+        
+default: 
+alert("У вашій країні доставка недоступна");
 }
